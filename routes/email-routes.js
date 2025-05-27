@@ -23,8 +23,8 @@ router.post('/:id/send', upload.single('pdf'), async (req, res) => {
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: invoice.studentEmail,
-      subject: `Invoice for ${invoice.customerName}`,
-      text: `Hello ${invoice.customerName},\n\nPlease find your invoice attached.\n\nThank you!`,
+      subject: `Invoice for ${invoice.studentName}`,
+      text: `Hello ${invoice.studentName},\n\nPlease find your invoice attached.\n\nThank you!`,
       attachments: [
         {
           filename: `invoice-${invoice._id}.pdf`,
