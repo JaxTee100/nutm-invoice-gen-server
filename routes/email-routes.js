@@ -31,7 +31,7 @@ router.post('/:id/send', upload.single('pdf'), async (req, res) => {
     <p>We look forward to receiving payment.</p>
     <p>Thank you.</p>
     <br />
-    <p>Best Regards,<br /> <strong>NUTM Bursary</strong></p>
+    <p>Best regards,<br /> <strong>NUTM Bursary</strong></p>
   `,
       attachments: [
         {
