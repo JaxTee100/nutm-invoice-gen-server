@@ -29,8 +29,9 @@ router.post('/:id/send', upload.single('pdf'), async (req, res) => {
     <p>We trust you are doing well.</p>
     <p>Please find attached the invoice for your Undergraduate Programme tuition fee for Year 2.</p>
     <p>We look forward to receiving payment.</p>
+    <p>Thank you.</p>
     <br />
-    <p>Thank you.<br><strong>NUTM Bursary</strong></p>
+    <p>Best Regards,<br /> <strong>NUTM Bursary</strong></p>
   `,
       attachments: [
         {
