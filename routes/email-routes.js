@@ -35,7 +35,7 @@ router.post('/:id/send', upload.single('pdf'), async (req, res) => {
   `,
       attachments: [
         {
-          filename: `invoice-${invoice._id}.pdf`,
+          filename: `NUTM Invoice-${invoice.studentName}.pdf`,
           content: req.file.buffer,
           encoding: 'base64',
         },
